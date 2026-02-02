@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Notification Menu</title>
-
   <style>
     /* Container */
     #container {
@@ -32,6 +32,9 @@
     img {
       width: 100px;
       height: 100px;
+      min-width: 100px;
+      max-width: 100px;
+      display: block;
       border-radius: 50%;
       border: 1px solid black;
     }
@@ -63,50 +66,45 @@
       color: rgb(255, 255, 255);
       border-radius: 10px;
       border: none;
+      cursor: pointer;
     }
   </style>
-
 </head>
 <body>
 
   <div id="container">
-
     <h1>Notifications</h1>
 
+    <!-- Notification 1 -->
     <div class="notification">
-      <img src="https://via.placeholder.com/100" alt="user">
-      <p>
-        <span class="user">Uriah Pagac</span> says hi!
-        <span class="time">less than a minute ago</span>
-      </p>
+      <img src="https://via.placeholder.com/100" alt="User 1">
+      <p><span class="user">John Doe</span> liked your post.</p>
+      <span class="time">2 hours ago</span>
     </div>
 
+    <!-- Notification 2 -->
     <div class="notification">
-      <img src="https://via.placeholder.com/100" alt="user">
-      <p>
-        <span class="user">Magnus Gislason</span> is glad we're friends
-        <span class="time">1 minute ago</span>
-      </p>
+      <img src="https://via.placeholder.com/100" alt="User 2">
+      <p><span class="user">Jane Smith</span> commented: "Nice photo!"</p>
+      <span class="time">1 hour ago</span>
     </div>
 
+    <!-- Notification 3 -->
     <div class="notification">
-      <img src="https://via.placeholder.com/100" alt="user">
-      <p>
-        <span class="user">Magnus Gislason</span> sent you a gift
-        <span class="time">10 minutes ago</span>
-      </p>
+      <img src="https://via.placeholder.com/100" alt="User 3">
+      <p><span class="user">Alice</span> started following you.</p>
+      <span class="time">30 minutes ago</span>
     </div>
 
+    <!-- Notification 4 -->
     <div class="notification">
-      <img src="https://via.placeholder.com/100" alt="user">
-      <p>
-        <span class="user">Lauren Bednar</span> is glad we're friends
-        <span class="time">10 minutes ago</span>
-      </p>
+      <img src="https://via.placeholder.com/100" alt="User 4">
+      <p><span class="user">Bob</span> shared your post.</p>
+      <span class="time">Just now</span>
     </div>
 
+    <!-- View More Button -->
     <button>View More</button>
-
   </div>
 
 </body>
